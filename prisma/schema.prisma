@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id           Int      @id @default(autoincrement())
+  name         String
+  price        String
+  salePrice    String?  // 할인가
+  oldPrice     String?  // 정상가(원가)
+  discountRate String?  // 할인율
+  brand        String?  // 브랜드
+  title        String?  // 상품명(브랜드 제외)
+  imageUrl     String?
+  detailUrl    String?
+  reviewScore  String?  // 평점
+  reviewCount  String?  // 리뷰 개수
+  createdAt    DateTime @default(now())
+}

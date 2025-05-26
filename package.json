@@ -1,0 +1,30 @@
+{
+  "name": "sale-info",
+  "version": "1.0.0",
+  "description": "이마트 세일 상품 크롤러 백엔드",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "prisma": "prisma"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.8.2",
+    "@types/express": "^5.0.2",
+    "axios": "^1.9.0",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1",
+    "node-cron": "^4.0.7",
+    "playwright": "^1.52.0",
+    "prisma": "^6.8.2",
+    "puppeteer": "^24.9.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}

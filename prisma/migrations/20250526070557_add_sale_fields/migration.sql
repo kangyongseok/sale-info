@@ -1,0 +1,8 @@
+-- AlterTable
+ALTER TABLE `Product` ADD COLUMN `brand` VARCHAR(191) NULL,
+    ADD COLUMN `discountRate` VARCHAR(191) NULL,
+    ADD COLUMN `oldPrice` VARCHAR(191) NULL,
+    ADD COLUMN `reviewCount` VARCHAR(191) NULL,
+    ADD COLUMN `reviewScore` VARCHAR(191) NULL,
+    ADD COLUMN `salePrice` VARCHAR(191) NULL,
+    ADD COLUMN `title` VARCHAR(191) NULL;
